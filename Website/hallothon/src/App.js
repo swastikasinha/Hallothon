@@ -6,7 +6,7 @@ const App = () => {
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: "AIzaSyAgRG-usXfwmTuw9yP0HSKcdy0mszlcWYw",
   });
-  const center = useMemo(() => ({ lat: 18.52043, lng: 73.856743 }), []);
+  const center = useMemo(() => ({ lat: 12.9353971, lng: 77.5355179 }), []);
 
   return (
     <div className="App">
@@ -16,9 +16,9 @@ const App = () => {
         <GoogleMap
           mapContainerClassName="map-container"
           center={center}
-          zoom={10}
+          zoom={15}
         >
-          <Marker position={{ lat: 18.52043, lng: 73.856743 }} />
+          <Marker position={{ lat: 12.9353971, lng: 77.5355179 }} icon={"http://maps.google.com/mapfiles/ms/icons/green-dot.png"} />
         </GoogleMap>
       )}
     </div>
